@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: rgb(206, 206, 206); */
+}
+
+
+nav {   
+    background-color: var(--navbar-color) ;
+    padding: 10px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: bor;
+    
+}
+
+.nav-items {
+    font-weight: bold;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: -80px;
+    margin-left: 90px;
+    align-items: end;
+    padding-left: 475px;
+    
+}
+
+.nav-items a {
+    padding: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: font-weight 150ms;
+    
+}
+
+.nav-items a:hover {
+    font-weight: bold;
+}
+
+.logo img {
+    height: 75px;
+}
+
+
+
+.daftar-button  {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.daftar-button button {
+    color: white;
+    padding: 16px 32px;
+    border: 0 ;
+    background-color: rgb(140, 31, 31);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: scale 300ms, background-color 150ms;
+    margin-left: 600px;
+    margin-top: 33px;
+
+}
+
+.daftar-button button:hover {
+    background-color: rgb(140, 31, 31);
+    scale: 120%;
+}
+
+
+
+
+
+.login-button  {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.login-button button {
+    color: white;
+    padding: 16px 32px;
+    border: 0 ;
+    background-color: rgb(140, 31, 31);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: scale 300ms, background-color 150ms;
+    margin-left: 600px;
+    margin-top: 33px;
+
+}
+
+.login-button button:hover {
+    background-color: rgb(140, 31, 31);
+    scale: 120%;
+}
+
+
+
+
+
+.hero {
+    width: 100%;
+    height: 100 px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+    background-color: var(--primary-color);
+}
+
+.hero img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    filter: brightness(40%) saturate(0);
+    /* padding-left: 60%; */
+    transition: all;
+   
+}
+
+.hero-title {
+    background-color:rgb(253, 255, 191);
+    padding: 20px 32px;
+    border-radius: 20px;
+    filter: brightness(60%);
+    position: absolute;
+    text-align: left;
+    margin-left: -900px;
+    margin-top: -1900px;
+    width: 20%;
+}
+
+.hero-title h1 {
+    font-size: 20px;
+}
+
+.hero-title p {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: rgb(140, 31, 31);
+}
+
+.hero-title hr {
+    height: 4px;
+    width: 290px;
+    margin-top: 4px;
+    border: none;
+    background-color: rgb(140, 31, 31);
+    margin-bottom: 10px;
+}
+
+
+.news {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding-bottom: 20%;
+    padding-top: 17%;
+}
+
+.news-title {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    color: var(--text-color);
+}
+
+.news-title hr {
+    height: 4px;
+    width: 100px;
+    margin-top: 4px;
+    border: none;
+    background-color: #FFDD00;
+}
+
+.news-container {
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 16px;
+    margin-inline: 96px;
+}
+
+.news-card {
+    height: auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.news-card img {
+    height: 60%;
+    object-fit: cover;
+    filter: saturate(0);
+}
+
+.news-preview {
+    height: 40%;
+    background-color:var(--news-color);
+}
+
+.news-preview h3 {
+    padding-top: 16px;
+    padding-inline: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-color);
+}
+
+.news-preview p {
+    margin-top: 8px;
+    padding-inline: 32px;
+    text-align: justify;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+
+
+.news-btn-container {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-btn-container button {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 24px 16px 32px;
+    border: 3px solid #EFCD00;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 #EFCD00;
+    -webkit-transition: ease-out 300ms;
+    -moz-transition: ease-out 300ms;
+    transition: box-shadow 300ms, fill 200ms, color 150ms;
+}
+
+.news-btn-container button span {
+    display: flex;
+    align-items: center;
+}
+
+.news-btn-container button:hover {
+    fill: white;
+    color: #FFF;
+    box-shadow: inset 400px 0 0 0 #EFCD00;
+}
+
+
+
+/* .info-container {
+    height: 300px;
+    background-color: #531a1a;
+    color: white;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+footer p {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-align: center
+} */
+
+
+/* Style untuk kontainer info */
+.info-container {
+    text-align: center;
+    background-color: #531a1a;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 1700px;
+    color: #FFF
+  }
+  
+  /* Style untuk gambar profil */
+  .info-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Style untuk teks informasi pribadi */
+  .info-container p {
+    margin: 10px 0;
+  }
+  
+  /* Style untuk tombol "Abaikan" dan "Gas Follow" */
+  .info-container input[type="button"] {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--news-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hover state untuk tombol */
+  .info-container input[type="button"]:hover {
+    background-color: var(--navbar-color);
+  }
+
+
+
+
+#theme {
+    margin: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: rgb(206, 206, 206);
+    --text-color: black;
+    --navbar-color: rgb(203, 207, 83);
+    --news-color: rgb(253, 255, 191);
+
+}
+
+.darkmode {
+    --primary-color: rgb(19, 19, 19);
+    --text-color: white;
+    --navbar-color: rgb(103, 10, 10);
+    --news-color: rgb(149, 56, 56);
+
+}
+
+
+
+
+
+
+
+
+.popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgb(203, 207, 83);
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    margin-left: -100px;
+}
+
+.popuptext.show {
+    visibility: visible;
+}
+
+
+
+/* Style untuk kontainer form */
+.login {
+    width: 250px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: left;
+    color: var(--text-color);
+    margin-top: -100px;
+    margin-bottom: 100px;
+
+  }
+  
+  /* Style untuk judul form */
+  .login h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  /* Style untuk label */
+  .login label {
+    display: flex;
+    text-align: left;
+    margin: 1px 0;
+    font-weight: bold;
+    padding-right: 100px;
+  }
+  
+  /* Style untuk input text dan email */
+  .login input[type="text"],
+  .login input[type="email"],
+  .login input[type="password"],
+  .login input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style untuk tombol submit */
+  .login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--navbar-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  /* Hover state untuk tombol submit */
+  .login input[type="submit"]:hover {
+    background-color: var(--news-color);
+  }
+
+
+
+
+
+
+
+
+
+  
+  /* Style untuk kontainer form */
+  .form {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    max-width: 350px;
+    justify-content: center;
+    margin-left: 560px;
+    margin-top: 200px;
+  }
+  
+  /* Style untuk gambar logo */
+  .form img {
+    width: 150px;
+    margin: 10px 0;
+  }
+  
+  /* Style untuk judul form */
+  .form-container h1 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  /* Style untuk input teks */
+  .textfield {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style untuk label "Ingat username ini" */
+  .remember {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  /* Style untuk tombol "Masuk" */
+  .login-btn {
+    /* width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; */
+    padding: 16px 32px;
+    border: 0;
+    background-color: #EFCD00;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: scale 300ms, background-color 150ms;
+    margin-top: 10px;
+  }
+  
+  /* Hover state untuk tombol "Masuk" */
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+
+  /* Style untuk tombol Login */
+.portal-btn {
+    /* display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; */
+    padding: 16px 0px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: scale 300ms, background-color 150ms;
+    color: black;
+  }
+  
+
+  
+  /* Style untuk teks dalam tombol */
+  .portal-btn button {
+    border: none;
+    background: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Style untuk kontainer menu admin */
+.dash-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Style untuk judul halaman */
+  .dash-main h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+
+  .dash-main p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+
+  .leading-btn {
+    margin: 20px 0;
+    padding-right: 1400px;
+  }
+  
+  .add-btn, .history-btn {
+    padding: 10px 20px;
+    background-color: rgb(203, 207, 83);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    justify-content: left;
+  }
+  
+
+  .add-btn:hover, .history-btn:hover {
+    background-color: rgb(203, 207, 83);
+    justify-content: left;
+  }
+  
+  /* Style untuk tabel */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  /* Style untuk header kolom tabel */
+  table th {
+    background-color: rgb(203, 207, 83);
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style untuk baris dalam tabel */
+  table tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style untuk aksi (Edit dan Hapus) */
+  .action {
+    text-align: center;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 10px 20px;
+    background-color: rgb(103, 10, 10);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Hover state untuk tombol Edit dan Hapus */
+  .edit-btn:hover, .delete-btn:hover {
+    background-color: rgb(103, 10, 10);
+  }
+
+
+
+
+
+
+
+
+
+  /* Style untuk kontainer penambahan data */
+.add-data {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Style untuk kontainer formulir */
+  .add-form-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    border-bottom: 100px;
+    max-width: 300px;
+    margin-left: 570px;
+    margin-top: 200px;
+  }
+  
+  /* Style untuk judul form */
+  .add-form-container h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style untuk garis pemisah */
+  .add-form-container hr {
+    margin: 20px 0;
+  }
+  
+  /* Style untuk label */
+  .add-form-container label {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  /* Style untuk input teks */
+  .add-form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Style untuk tombol "Tambah" */
+  .add-form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(203, 207, 83);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover state untuk tombol "Tambah" */
+  .add-form-container button[type="submit"]:hover {
+    background-color: rgb(203, 207, 83) ;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    color: #007BFF;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
